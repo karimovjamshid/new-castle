@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>New Castle School</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="img/hero/logo-sm.svg" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- ============= Hero ============= -->
+  <section class="hero" id="main">
+    <!-- ============= Header ============= -->
+    <header class="header" id="header">
+      <div class="header__container container">
+        <div class="header__left">
+          <a href="/" class="logo">
+            <img src="img/hero/logo-sm.svg" height="40px" alt="logo" />
+            <span>newcastle school</span>
+          </a>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#" data-scroll="#main" class="header__link">Главная</a>
+              </li>
+              <li class="header__item header__item--english">
+                <a href="#" class="header__link">English
+                  <span><img src="img/icons/arrow-up.svg" alt="" /></span></a>
+                <div class="header-dropdown">
+                  <div class="header-dropdown__item">
+                    <a href="#" data-scroll="#general" class="header-dropdown__title">
+                      General English
+                    </a>
+                    <div class="header-dropdown__icon">
+                      <img src="img/icons/english.svg" height="25px" alt="">
+                    </div>
+                  </div>
+                  <div class="header-dropdown__item">
+                    <a href="#" data-scroll="#kids" class="header-dropdown__title">Kids English</a>
+                    <div class="header-dropdown__icon">
+                      <img src="img/icons/kid-icon.svg" height="25px" alt="">
+                    </div>
+                  </div>
+                  <div class="header-dropdown__item">
+                    <a href="#" data-scroll="#ielts" class="header-dropdown__title">IELTS</a>
+                    <div class="header-dropdown__icon">
+                      <img src="img/icons/star.svg" height="25px" alt="">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="header__item">
+                <a href="#" data-scroll="#russian" class="header__link">Русский язык</a>
+              </li>
+              <li class="header__item">
+                <a href="#" data-scroll="#math" class="header__link">Математика на 3 языках</a>
+              </li>
+              <li class="header__item">
+                <a href="#" data-scroll="#pochemuchka" class="header__link">Почемучка</a>
+              </li>
+              <li class="header__item">
+                <a href="#" data-scroll="#teachers" class="header__link">Наши преподователи</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__right">
+          <a href="tel:+998999895522" class="header__contacts">Контакты</a>
+          <div class="lang">
+            <a class="lang__link active">Ru</a>
+            <a class="lang__link">Uz</a>
+          </div>
+        </div>
+        <div class="burger-fixed">
+          <div class="burger ">
+            <span class="burger__line"></span>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <div class="mini-nav">
+      <div class="mini-nav__container">
+        <div class="center">
+          <a href="/" class="logo">
+            <img src="img/hero/logo-sm.svg" height="40px" alt="logo" />
+            <span>newcastle school</span>
+          </a>
+        </div>
+
+        <nav class="mini-nav__navigation">
+          <div class="mini-nav__item">
+            <div class="mini-nav__icon">
+              <img src="img/icons/home.svg" height="25px" alt="">
+            </div>
+            <a href="/" data-scroll="#main" class="mini-nav__link">
+              Главная
+            </a>
+            <div class="mini-nav__arrow">
+            </div>
+          </div>
+
+          <div class="mini-nav__item mini-nav__item--english">
+            <div class="mini-nav__icon">
+              <img src="img/icons/english.svg" height="25px" alt="">
+            </div>
+            <a href="/" class="mini-nav__link--alt" id="miniNavEnglish">
+              English
+            </a>
+            <div class="mini-nav__arrow">
+              <img class="mini-nav__img" src="img/icons/arrow-right.svg" height="15px" alt="">
+            </div>
+          </div>
+          <div class="mini-submenu">
+            <div class="mini-submenu__item">
+              <div class="mini-submenu__icon">
+                <img src="img/icons/english.svg" height="20px" alt="">
+              </div>
+              <a href="#" data-scroll="#general" class="mini-submenu__title">
+                General English
+              </a>
+            </div>
+            <div class="mini-submenu__item">
+              <div class="mini-submenu__icon">
+                <img src="img/icons/kid-icon.svg" height="20px" alt="">
+              </div>
+              <a href="#" data-scroll="#kids" class="mini-submenu__title">
+                Kids English
+              </a>
+            </div>
+            <div class="mini-submenu__item">
+              <div class="mini-submenu__icon">
+                <img src="img/icons/star.svg" height="20px" alt="">
+              </div>
+              <a href="#" data-scroll="#ielts" class="mini-submenu__title">
+                IELTS
+              </a>
+            </div>
+          </div>
+          <div class="mini-nav__item">
+            <div class="mini-nav__icon">
+              <img src="img/icons/russian.svg" height="25px" alt="">
+            </div>
+            <a href="/" data-scroll="#russian" class="mini-nav__link">
+              Русский язык
+            </a>
+            <div class="mini-nav__arrow">
+            </div>
+          </div>
+          <div class="mini-nav__item">
+            <div class="mini-nav__icon">
+              <img src="img/icons/calc.svg" height="25px" alt="">
+            </div>
+            <a href="/" data-scroll="#math" class="mini-nav__link">
+              Математика на 3 языках
+            </a>
+            <div class="mini-nav__arrow">
+            </div>
+          </div>
+          <div class="mini-nav__item">
+            <div class="mini-nav__icon">
+              <img src="img/icons/kid-icon.svg" height="25px" alt="">
+            </div>
+            <a href="/" data-scroll="#pochemuchka" class="mini-nav__link">
+              Почемучка
+            </a>
+            <div class="mini-nav__arrow">
+            </div>
+          </div>
+          <div class="mini-nav__item">
+            <div class="mini-nav__icon">
+              <img src="img/icons/star.svg" height="25px" alt="">
+            </div>
+            <a href="/" data-scroll="#teachers" class="mini-nav__link">
+              Наши преподователи
+            </a>
+            <div class="mini-nav__arrow">
+            </div>
+          </div>
+        </nav>
+        <div class="mini-nav__bottom">
+          <a href="#" class="mini-nav__contacts">Контакты</a>
+          <div class="mini-lang">
+            <a class="mini-lang__link active">Ru</a>
+            <a class="mini-lang__link">Uz</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="hero__content container-sm">
+      <div class="hero__about">
+        <div class="hero__heading">
+          <img src="img/hero/logo-sm.svg" alt="" />
+          <h3 class="hero__h3">newcastle school</h3>
+        </div>
+        <div class="hero__text-wrapper">
+          <p class="hero__text">
+            В нашем центре перед вами открывается большой выбор программ
+            обучения. Мы предлагаем курсы General English, подготовку к IELTS/
+            Special IELTS интенсив, курсы Математики на 3 языках, "Почемучку"
+            для детей, курсы Русского языка.
+          </p>
+          <p class="hero__text">
+            Допустим, если вы абитуриент,
+            который хочет поступить в университет Westminster, но не знает, где
+            пройти подготовку, то New Castle School тщательно подготовит вас
+            сдаче английского и математики на английском языке.
+          </p>
+
+          <p class="hero__text">
+
+            За плечами наших компетентных преподавателей лежат многие годы упорной работы. Именно
+            поэтому наши учителя выработали свои методы обучения студентов,
+            которые не раз показали свою эффективность.
+          </p>
+
+        </div>
+
+      </div>
+      <div class="subscribe">
+        <header class="subscribe__header">
+          <div class="subscribe__group">
+            <div class="subscribe__img">
+              <img src="img/icons/free-icon.svg" alt="" />
+            </div>
+            <div class="subscribe__title">
+              3 Урока бесплатно новым студентам
+            </div>
+          </div>
+        </header>
+        <form action="">
+          <div class="subscribe__input">
+            <input type="text" class="input-text" placeholder="Имя и Фамилия" name="" id="" />
+          </div>
+          <div class="subscribe__input">
+            <input type="text" class="input-text" placeholder="Телефонный номер" name="" id="" />
+          </div>
+          <div class="center">
+            <button class="btn">Записаться</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= IELTS ============= -->
+  <section class="section ielts" id="ielts">
+    <div class="section__container container">
+      <div class="section__left">
+        <div class="section__heading">ielts</div>
+        <div class="section__text-wrapper">
+          <p class="section__text text">
+            Подготовка к сдаче экзамена IELTS – процесс, требующий много сил и
+            терпения. В учебном центре New Castle в курсы IELTS входит изучение
+            всех секций экзамена:
+
+          </p>
+          <ul class="section__list">
+            <li class="section__item">Reading </li>
+            <li class="section__item">Listening</li>
+            <li class="section__item">Writing</li>
+            <li class="section__item">Speaking</li>
+          </ul>
+          <p class="section__text text">
+            Также у нас есть отдельный вид подготовки – Special IELTS интенсив
+            за 2 месяца. Нет времени на долгую подготовку? Обучитесь у нас всего
+            за 2 месяца и получите хороший результат!
+          </p>
+          <p class="section__text text">
+            Уроки в нашем центре
+            проводятся профессионалами в этой сфере. Наш самый опытный
+            укротитель IELTS – преподаватель Ильхом Салькаев, общий балл
+            которого – 8.5 band score, а по секции Speaking – 9.0 band score.
+            Именно на такие блестящие результаты Mr. Ильхом и мотивирует своих
+            студентов.
+          </p>
+          <p class="section__text text">
+            Успейте записаться, ведь места в классах, к сожалению,
+            ограничены.
+          </p>
+        </div>
+
+        <div class="subscribe">
+          <header class="subscribe__header">
+            <div class="subscribe__group">
+              <div class="subscribe__img">
+                <img src="img/icons/ielts.svg" alt="" />
+              </div>
+              <div class="subscribe__title">Записаться на курсы IELTS</div>
+            </div>
+          </header>
+          <form action="">
+            <div class="subscribe__input">
+              <input type="text" class="input-text" placeholder="Имя и Фамилия" name="" id="" />
+            </div>
+            <div class="subscribe__input">
+              <input type="text" class="input-text" placeholder="Телефонный номер" name="" id="" />
+            </div>
+            <div class="center">
+              <button class="btn">Записаться</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="section__right">
+        <img src="img/sections/ielts-bg.png" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- ============= General English ============= -->
+  <section class="section general-eng" id="general">
+    <div class="section__container container">
+      <div class="section__left">
+        <div class="section__heading">
+          <span>general</span>
+          <span>english</span>
+        </div>
+        <div class="section__text-wrapper">
+          <p class="section__text text">
+            Почти весь мир уже говорит на английском, а ты все еще не знаешь ничего кроме фразы «I’m fine, thank you»?
+          </p>
+          <p class="section__text text">
+            В нашем учебном центре можно легко исправить это! На курсах General English вы научитесь всем аспектам
+            английской грамматики, проработаете свое произношение, начнете понимать английскую речь на слух, а главное –
+            заговорите! И говорить вы будете исключительно на английском! Вас ждут практика, практика и еще раз
+            практика!
+          </p>
+          <p class="section__text text">
+            Записавшись на курсы, вы пройдете следующие уровни:
+          </p>
+
+          <ul class="section__list">
+            <li class="section__item">Elementary </li>
+            <li class="section__item">Pre-Intermediate</li>
+            <li class="section__item">Intermediate</li>
+            <li class="section__item">Upper-Intermediate</li>
+          </ul>
+          <p class="section__text text">Спешите записаться – места в группах ограничены.</p>
+
+
+        </div>
+
+        <div class="subscribe">
+          <header class="subscribe__header">
+            <div class="subscribe__group">
+              <div class="subscribe__img">
+                <img src="img/icons/free-icon.svg" alt="" />
+              </div>
+              <div class="subscribe__title">
+                3 Урока бесплатно новым студентам
+              </div>
+            </div>
+          </header>
+          <form action="">
+            <div class="subscribe__input">
+              <input type="text" class="input-text" placeholder="Имя и Фамилия" name="" id="" />
+            </div>
+            <div class="subscribe__input">
+              <input type="text" class="input-text" placeholder="Телефонный номер" name="" id="" />
+            </div>
+            <div class="center">
+              <button class="btn">Записаться</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="section__right">
+        <img src="img/sections/english.png" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- ============= Kids English ============= -->
+  <section class="section kids-eng" id="kids">
+    <div class="section__container container">
+      <div class="section__left">
+        <div class="section__heading">
+          <div>
+            <span>k</span>
+            <span>i</span>
+            <span>d</span>
+            <span>s</span>
+          </div>
+
+          english
+        </div>
+        <div class="section__text-wrapper">
+          <p class="section__text text">
+            Kids English – отличное времяпровождение для любознательных малюток. Ведь программа этого курса немного
+            отличается от General English. Английский для детей намного упрощен и включает в себя множество
+            развлекательных упражнений и заданий во время обучения. </p>
+          <p class="section__text text">
+            Во время занятий мы стараемся полностью увлечь нашего юного студента, ведь интересные и легкие уроки
+            английского прививают любовь и интерес к обучению. Если вы приведете своего ребенка к нам уже сегодня, вы
+            сделаете драгоценный вклад в его будущее. Поскольку английский язык – это язык будущего, и изучать его нужно
+            уже с ранних лет!
+          </p>
+        </div>
+
+        <div class="subscribe">
+          <header class="subscribe__header">
+            <div class="subscribe__group">
+              <div class="subscribe__img">
+                <img src="img/icons/kid-icon.svg" alt="" />
+              </div>
+              <div class="subscribe__title">Всё начинается с детства</div>
+            </div>
+          </header>
+          <form action="">
+            <div class="subscribe__input">
+              <input type="text" class="input-text" placeholder="Имя и Фамилия" name="" id="" />
+            </div>
+            <div class="subscribe__input">
+              <input type="text" class="input-text" placeholder="Телефонный номер" name="" id="" />
+            </div>
+            <div class="center">
+              <button class="btn">Записаться</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="section__right"></div>
+    </div>
+  </section>
+  <!-- ============= Russian ============= -->
+  <section class="section russian" id="russian">
+    <div class="section__container container">
+      <div class="section__left">
+        <div class="section__heading">РУССКИЙ ЯЗЫК</div>
+        <div class="section__text-wrapper">
+          <p class="section__text text">
+            Что же делать, когда все ваше окружение грамотно говорит на русском, а вы – нет? Хотите покорить великую
+            русскую речь и ее грамматику?
+          </p>
+          <p class="section__text text">
+            New Castle School обучит вас всем тонкостям русского языка, начиная от грамматики и заканчивая беглой речью.
+            Вам больше не придется краснеть и отмалчиваться, когда вокруг вас заговорят на русском! Наши курсы "Русский
+            язык" подойдут для всех: как для новичков и начинающих, так и для тех, кто просто хочет подтянуть свои
+            навыки.
+          </p>
+          <p class="section__text text">
+            Что касается грамматики русского языка, то нам также есть что предложить! Ведь на курсах вы пройдете
+            интенсив-подготовку, которая поможет вам при поступлении в ВУЗы.
+          </p>
+          <p class="section__text text">
+            Русский язык – заяви о себе и о своих умениях вместе с New Castle!
+          </p>
+        </div>
+
+        <div class="subscribe">
+          <header class="subscribe__header">
+            <div class="subscribe__group">
+              <div class="subscribe__img">
+                <img src="img/icons/russian.svg" alt="" />
+              </div>
+              <div class="subscribe__title">
+                1 бесплатный урок новым студентам
+              </div>
+            </div>
+          </header>
+          <form action="">
+            <div class="subscribe__input">
+              <input type="text" class="input-text" placeholder="Имя и Фамилия" name="" id="" />
+            </div>
+            <div class="subscribe__input">
+              <input type="text" class="input-text" placeholder="Телефонный номер" name="" id="" />
+            </div>
+            <div class="center">
+              <button class="btn">Записаться</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="section__right"></div>
+    </div>
+  </section>
+  <!-- ============= Math ============= -->
+  <section class="section math" id="math">
+    <div class="section__container container">
+      <div class="section__left">
+        <div class="section__heading">МАТЕМАТИКА НА 3 ЯЗЫКАХ</div>
+        <div class="section__text-wrapper">
+          <p class="section__text text">
+            Все время мучаетесь с решением задач и уравнений у доски?
+          </p>
+          <p class="section__text text">
+            Математика на самом деле – увлекательная и понятная наука. Но это только в том случае, если вы изучаете ее с
+            правильными преподавателями в правильном месте.
+          </p>
+          <p class="section__text text">
+            Наш центр предлагает вам учить математику на 3 разных языках – Английский, Русский и Узбекский. Математика
+            на
+            английском понадобится вам, если вы поступаете в международные ВУЗы страны, в которых проходные экзамены
+            проходят лишь на английском языке. Математика, которую вы учили на английском – откроет для вас все двери.
+          </p>
+          <p class="section__text text">
+            На уроках «Математика» в учебном центре New Castle вас ждет детальный разбор непонятных для вас аспектов и
+            тем, изучение всех математических правил, а главное – огромное количество практики в решении примеров, задач
+            и
+            уравнений.
+          </p>
+        </div>
+
+        <div class="subscribe">
+          <header class="subscribe__header">
+            <div class="subscribe__group">
+              <div class="subscribe__img">
+                <img src="img/icons/calc.svg" alt="" />
+              </div>
+              <div class="subscribe__title">Освоить математику</div>
+            </div>
+          </header>
+          <form action="">
+            <div class="subscribe__input">
+              <input type="text" class="input-text" placeholder="Имя и Фамилия" name="" id="" />
+            </div>
+            <div class="subscribe__input">
+              <input type="text" class="input-text" placeholder="Телефонный номер" name="" id="" />
+            </div>
+            <div class="center">
+              <button class="btn">Записаться</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="section__right">
+        <img src="img/sections/math.jpg" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- ============= Pochemuchka ============= -->
+  <section class="section pochemuchka" id="pochemuchka">
+    <div class="section__container container">
+      <div class="section__left">
+        <div class="section__heading">ПОЧЕМУЧКА</div>
+        <div class="section__text-wrapper">
+          <p class="section__text text">
+            Хотите, чтобы ваш ребенок стремительно развивался, обходя при этом своих ровесников? Ведь это в сто раз
+            лучше,
+            когда ваши дети получают знания, чем бесполезно проводят все свободное время за телефоном. На "Почемучке" мы
+            научим вашего ребенка:
+          </p>
+          <ul class="section__list">
+            <li class="section__item">Читать, а также приучим их к выразительному и четкому чтению вслух; </li>
+            <li class="section__item">Грамотно писать и четко излагать свои мысли на бумаге;</li>
+            <li class="section__item">Любить математику и отлично в ней разбираться. Ваши детки научатся с легкостью
+              считать и складывать цифры.</li>
+          </ul>
+          <p class="section__text text">
+            В виде бонусов и подарков в курс "Почемучка" также включены:
+          </p>
+          <ul class="section__list">
+            <li class="section__item">Бесплатное обучение английскому языку.</li>
+            <li class="section__item">Бесплатные доступы на разговорный клуб и кино-клуб по Воскресеньям.</li>
+          </ul>
+
+          <p class="section__text text">
+            Приводите своих детей и наблюдайте за стремительным их прогрессом.
+          </p>
+        </div>
+
+        <div class="subscribe">
+          <header class="subscribe__header">
+            <div class="subscribe__group">
+              <div class="subscribe__img">
+                <img src="img/icons/telephone.svg" alt="" />
+              </div>
+              <div class="subscribe__title">Заказать обратный звонок</div>
+            </div>
+          </header>
+          <form action="">
+            <div class="subscribe__input">
+              <input type="text" class="input-text" placeholder="Имя и Фамилия" name="" id="" />
+            </div>
+            <div class="subscribe__input">
+              <input type="text" class="input-text" placeholder="Телефонный номер" name="" id="" />
+            </div>
+            <div class="center">
+              <button class="btn">Записаться</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="section__right"></div>
+    </div>
+  </section>
+  <!-- ============= Teachers ============= -->
+  <section class="teachers" id="teachers">
+    <div class="teachers__container container">
+      <h1 class="teachers__h1">Наши преподователи</h1>
+      <div class="teachers__content">
+        <div class="teachers__item">
+          <div class="teachers__photo">
+            <img src="img/teachers/photo-1.jpg" alt="" />
+          </div>
+          <div class="teachers__group">
+            <h4 class="teachers__name">ПУЛАТОВА</h4>
+            <h4 class="teachers__surname">ХАЙРИНИСО</h4>
+          </div>
+          <p class="teachers__desc text">
+            Учитель английского языка высшей категории.
+          </p>
+          <p class="teachers__exp text ">Опыт работы 26 лет</p>
+        </div>
+        <div class="teachers__item">
+          <div class="teachers__photo">
+            <img src="img/teachers/photo-2.jpg" alt="" />
+          </div>
+          <div class="teachers__group">
+            <h4 class="teachers__name">ИЛЬХАМ</h4>
+            <h4 class="teachers__surname">САЛКАЕВ</h4>
+          </div>
+          <p class="teachers__desc text">
+            Легендарный IELTS инструктор
+            с личным результатом 8,5 баллов
+            (9.0 в разделе speaking и listening)
+          </p>
+        </div>
+        <div class="teachers__item">
+          <div class="teachers__photo">
+            <img src="img/teachers/photo-3.png" alt="" />
+          </div>
+          <div class="teachers__group">
+            <h4 class="teachers__name">НИЯТОВА</h4>
+            <h4 class="teachers__surname">ДИЛЬДОРА</h4>
+          </div>
+          <p class="teachers__desc text">
+            Наш эксперт-математик, а ещё
+            и обладательница IELTS 7.5
+          </p>
+        </div>
+        <div class="teachers__item">
+          <div class="teachers__photo">
+            <img src="img/teachers/photo-4.jpg" alt="" />
+          </div>
+          <div class="teachers__group">
+            <h4 class="teachers__name">АХУНОВА</h4>
+            <h4 class="teachers__surname">ЗАРИНА</h4>
+          </div>
+          <p class="teachers__desc text">
+            Тот самый преподаватель, который
+            научит вас не скучной грамматике
+            по русскому языку
+
+            Автор научных статей, участник
+            международных конкурсов и конференций
+            по русскому языку и литературе.
+          </p>
+        </div>
+        <div class="teachers__item">
+          <div class="teachers__photo">
+            <img src="img/teachers/photo-5.jpg" alt="" />
+          </div>
+          <div class="teachers__group">
+            <h4 class="teachers__name">ПУЛАТОВА</h4>
+            <h4 class="teachers__surname">ХАЙРИНИСО</h4>
+          </div>
+          <p class="teachers__desc text">
+            Учитель английского языка
+          </p>
+          <p class="teachers__exp text ">Опыт работы 3 года</p>
+        </div>
+        <div class="teachers__item">
+          <div class="teachers__photo">
+            <img src="img/teachers/photo-6.jpg" alt="" />
+          </div>
+          <div class="teachers__group">
+            <h4 class="teachers__name">ПУЛАТОВА</h4>
+            <h4 class="teachers__surname">ХАЙРИНИСО</h4>
+          </div>
+          <p class="teachers__desc text">
+            Учитель английского языка
+            обладательница CEFR B2
+          </p>
+          <p class="teachers__exp text ">Опыт работы 2 года</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============= Footer ============= -->
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer-left">
+        <div class="footer-left__item">
+          <a href="/" class="logo">
+            <img src="img/hero/logo-sm.svg" height="40px" alt="logo" />
+            <span>newcastle school</span>
+          </a>
+        </div>
+        <div class="footer-left__item">
+          <address>
+            Улица Паркент 199, <br />
+            Напротив Ресторана "So'zana"
+          </address>
+        </div>
+        <div class="footer-left__item">
+          <a class="footer-left__link" href="tel:+998999895522">+998 99 989 55 22</a>
+          <a class="footer-left__link" href="tel:++998999795522">+998 99 979 55 22</a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="social">
+          <a href="https://t.me/newcastle_school" target="_blank" class="social__icon">
+            <img src="img/icons/telegram.svg" alt="" />
+          </a>
+          <a href="#" target="_blank" class="social__icon">
+            <img src="img/icons/tic-toc.svg" alt="" />
+          </a>
+          <a href="https://www.facebook.com/Newcastle-School-%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9-%D1%86%D0%B5%D0%BD%D1%82%D1%80-100248221988674"
+            target="_blank" class="social__icon">
+            <img src="img/icons/facebook.svg" alt="" />
+          </a>
+          <a href="https://instagram.com/newcastle_school_?igshid=s4cvykbs7d5x" target="_blank" class="social__icon">
+            <img src="img/icons/instagram.svg" alt="" />
+          </a>
+        </div>
+        <div class="coded">
+          <span class="coded__text">Designed and Coded By</span>
+
+          <a href="https://220volt.studio/" target="_blank">
+            <img src="img/icons/220volt-studio.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
