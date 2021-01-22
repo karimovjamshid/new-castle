@@ -15,10 +15,13 @@
 
 html {
   font-size: 10px;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin: 0 !important; }
 
 body {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden; }
 
 h1,
 h2,
@@ -103,6 +106,27 @@ li {
     margin-left: 1rem;
     font-weight: 700;
     font-family: Arial, sans-serif; }
+
+.toTop {
+  display: inline-block;
+  position: fixed;
+  bottom: 11rem;
+  right: 2.5rem;
+  transition: opacity .5s linear;
+  opacity: 0;
+  z-index: -1;
+  box-shadow: -1px 2px 11px 2px rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.toTop:hover {
+  cursor: pointer; }
+
+#toTop.show {
+  opacity: 1;
+  z-index: 5000; }
 
 /* Header
 ===================*/
@@ -261,7 +285,8 @@ li {
     -ms-flex-align: center;
     align-items: center;
     border-radius: 50%;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    cursor: pointer; }
     .lang__link.active {
       background-color: #fff;
       color: #ed0d3e; }
@@ -397,14 +422,14 @@ li {
     .mini-nav__item--english {
       margin-bottom: 1rem; }
   .mini-nav__link {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: #fff;
     display: inline-block;
     -webkit-flex-basis: 75%;
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%; }
     .mini-nav__link--alt {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       color: #fff;
       display: inline-block;
       -webkit-flex-basis: 75%;
@@ -437,9 +462,9 @@ li {
     justify-content: center;
     margin-top: 4rem; }
   .mini-nav__contacts {
-    margin-right: 1.5rem;
+    margin-right: 2rem;
     color: #fff;
-    font-size: 1.3rem; }
+    font-size: 1.5rem; }
 
 .mini-submenu {
   width: 100%;
@@ -497,8 +522,8 @@ li {
   .mini-lang__link {
     color: #fff;
     text-transform: uppercase;
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 3.2rem;
+    height: 3.2rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -512,7 +537,9 @@ li {
     -ms-flex-align: center;
     align-items: center;
     border-radius: 50%;
-    font-size: 1.3rem; }
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin-right: 1rem; }
     .mini-lang__link.active {
       background-color: #fff;
       color: #ed0d3e; }
@@ -523,7 +550,7 @@ li {
   width: 100%;
   min-height: 100vh;
   height: auto;
-  background: url("../img/hero/hero-bg.jpg");
+  background: url("./img/hero/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -760,6 +787,12 @@ li {
   @media (max-width: 1210px) {
     .ielts .section__right {
       display: none; } }
+  @media (max-width: 1210px) {
+    .ielts .section__container {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 /* General English
 ===================*/
@@ -808,14 +841,26 @@ li {
   @media (max-width: 1210px) {
     .general-eng .section__right {
       display: none; } }
+  @media (max-width: 1210px) {
+    .general-eng .section__container {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 /* Kids English
 ===================*/
 .kids-eng {
-  background-image: url("../img/sections/kids-bg.png");
+  background-image: url("./img/sections/kids-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center; }
+  @media (max-width: 1210px) {
+    .kids-eng .section__container {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
   .kids-eng .section__heading {
     color: #0dceed;
     font-size: 9rem; }
@@ -873,11 +918,14 @@ li {
     width: 100%; }
   .kids-eng .section__left {
     width: 100%; }
+  @media (max-width: 1210px) {
+    .kids-eng .section__text-wrapper {
+      margin: 0 auto; } }
 
 /* Russian
 ===================*/
 .russian {
-  background-image: url("../img/sections/russian-bg.jpg");
+  background-image: url("./img/sections/russian-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center; }
@@ -912,6 +960,8 @@ li {
       .russian .section__heading {
         font-size: 3.2rem;
         max-width: 200px; } }
+    .russian .section__heading .section__text-wrapper {
+      margin: 0 auto; }
   @media (max-width: 1180px) {
     .russian .subscribe {
       margin: 0 auto; } }
@@ -924,11 +974,17 @@ li {
     background-color: #d43737; }
   .russian .section__text-wrapper {
     background-color: #d43737; }
+  @media (max-width: 1210px) {
+    .russian .section__container {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 /* Math
 ===================*/
 .math {
-  background-image: url("../img/sections/math-bg.jpg");
+  background-image: url("./img/sections/math-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center; }
@@ -973,7 +1029,14 @@ li {
     .math .subscribe__header img {
       margin-right: 0.7rem; }
   .math .section__text-wrapper {
-    background-color: #10845c; }
+    background-color: #10845c;
+    margin: 2rem auto; }
+  @media (max-width: 1210px) {
+    .math .section__container {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
   .math .btn {
     background-color: #10845c; }
   @media (max-width: 1370px) {
@@ -983,7 +1046,7 @@ li {
 /* Pochemuchka
 ===================*/
 .pochemuchka {
-  background: url("../img/sections/pochemuchka-bg.jpg");
+  background: url("./img/sections/pochemuchka-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center; }
@@ -1037,6 +1100,15 @@ li {
   .pochemuchka .section__text-wrapper {
     background-color: #ed0dde;
     margin-top: 4rem; }
+    @media (max-width: 1210px) {
+      .pochemuchka .section__text-wrapper {
+        margin: 2rem auto; } }
+  @media (max-width: 1210px) {
+    .pochemuchka .section__container {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 /* Footer
 ===================*/

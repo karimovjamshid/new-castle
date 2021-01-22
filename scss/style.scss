@@ -140,6 +140,7 @@
     align-items: center;
     border-radius: 50%;
     font-size: 1.3rem;
+    cursor: pointer;
 
     &.active {
       background-color: $white;
@@ -260,13 +261,13 @@
   }
 
   &__link {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: $white;
     display: inline-block;
     flex-basis: 75%;
 
     &--alt {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       color: $white;
       display: inline-block;
       flex-basis: 75%;
@@ -289,9 +290,9 @@
   }
 
   &__contacts {
-    margin-right: 1.5rem;
+    margin-right: 2rem;
     color: $white;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -333,13 +334,15 @@
   &__link {
     color: $white;
     text-transform: uppercase;
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 3.2rem;
+    height: 3.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin-right: 1rem;
 
     &.active {
       background-color: $white;
@@ -355,7 +358,7 @@
   width: 100%;
   min-height: 100vh;
   height: auto;
-  background: url("../img/hero/hero-bg.jpg");
+  background: url("./img/hero/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -609,6 +612,12 @@
     }
   }
 
+  .section__container {
+    @media(max-width: $laptop-lg) {
+      justify-content: center;
+    }
+  }
+
   .section__text-wrapper {}
 }
 
@@ -664,16 +673,27 @@
     }
   }
 
+  .section__container {
+    @media(max-width: $laptop-lg) {
+      justify-content: center;
+    }
+  }
 }
 
 /* Kids English
 ===================*/
 
 .kids-eng {
-  background-image: url("../img/sections/kids-bg.png");
+  background-image: url("./img/sections/kids-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+
+  .section__container {
+    @media(max-width: $laptop-lg) {
+      justify-content: center;
+    }
+  }
 
   .section__heading {
     color: $blue;
@@ -750,13 +770,20 @@
   .section__left {
     width: 100%;
   }
+
+  .section__text-wrapper {
+    @media(max-width: $laptop-lg) {
+      margin: 0 auto;
+    }
+
+  }
 }
 
 /* Russian
 ===================*/
 
 .russian {
-  background-image: url("../img/sections/russian-bg.jpg");
+  background-image: url("./img/sections/russian-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -785,6 +812,10 @@
       font-size: 3.2rem;
       max-width: 200px;
     }
+
+    .section__text-wrapper {
+      margin: 0 auto;
+    }
   }
 
   .subscribe {
@@ -810,13 +841,19 @@
     background-color: $darkRed;
 
   }
+
+  .section__container {
+    @media(max-width: $laptop-lg) {
+      justify-content: center;
+    }
+  }
 }
 
 /* Math
 ===================*/
 
 .math {
-  background-image: url("../img/sections/math-bg.jpg");
+  background-image: url("./img/sections/math-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -865,8 +902,15 @@
 
   .section__text-wrapper {
     background-color: $success;
+    margin: 2rem auto;
+
+  }
 
 
+  .section__container {
+    @media(max-width: $laptop-lg) {
+      justify-content: center;
+    }
   }
 
   .btn {
@@ -884,7 +928,7 @@
 ===================*/
 
 .pochemuchka {
-  background: url("../img/sections/pochemuchka-bg.jpg");
+  background: url("./img/sections/pochemuchka-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -946,7 +990,17 @@
     background-color: $purple;
     margin-top: 4rem;
 
+    @media(max-width: $laptop-lg) {
+      margin: 2rem auto;
+    }
   }
+
+  .section__container {
+    @media(max-width: $laptop-lg) {
+      justify-content: center;
+    }
+  }
+
 }
 
 /* Footer
