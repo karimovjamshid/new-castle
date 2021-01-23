@@ -725,7 +725,9 @@ li {
     margin: 2rem 2rem 2rem 3rem;
     padding: 2rem;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    -webkit-box-shadow: -1px 2px 11px 2px rgba(0, 0, 0, 0.7);
+    box-shadow: -1px 2px 11px 2px rgba(0, 0, 0, 0.7); }
     @media (max-width: 1210px) {
       .section__text-wrapper {
         margin: 2rem 2rem 2rem 0; } }
@@ -918,9 +920,13 @@ li {
     width: 100%; }
   .kids-eng .section__left {
     width: 100%; }
-  @media (max-width: 1210px) {
-    .kids-eng .section__text-wrapper {
-      margin: 0 auto; } }
+  .kids-eng .section__text-wrapper {
+    background-color: #0dceed;
+    -webkit-box-shadow: -1px 2px 11px 2px rgba(0, 0, 0, 0.7);
+    box-shadow: -1px 2px 11px 2px rgba(0, 0, 0, 0.7); }
+    @media (max-width: 1210px) {
+      .kids-eng .section__text-wrapper {
+        margin: 2rem auto; } }
 
 /* Russian
 ===================*/
