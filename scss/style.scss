@@ -537,10 +537,11 @@
     margin: 2rem 2rem 2rem 3rem;
     padding: 2rem;
     box-sizing: border-box;
-    box-shadow: $shadow;
+
 
     @media(max-width: $laptop-lg) {
       margin: 2rem 2rem 2rem 0;
+      box-shadow: $shadow;
     }
   }
 
@@ -775,11 +776,11 @@
   .section__text-wrapper {
 
     background-color: $blue;
-    box-shadow: $shadow;
+
 
     @media(max-width: $laptop-lg) {
       margin: 2rem auto;
-
+      box-shadow: $shadow;
     }
 
   }
